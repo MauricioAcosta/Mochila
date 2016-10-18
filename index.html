@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Problema de la mochila</title>
+	<meta charset='utf-8' />
+	<link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+	<h2>El problema de la mochila con Programación dinámica.</h2>
+	<h2>Peso limite de la Mochila</h2>
+	<input type="text" size="3" id="PesoLimite" />
+	<h2>Número de artículos</h2>
+	<input type="text" size="3" id="NumArticulos" />
+	<br/><br/>
+	<input type="button" value="Peso y Valor" onclick="articulos();">
+	<table class="centrado">
+		<tr>
+			<td>
+				<ul class="lista">
+					<li>
+						Valor:
+					</li>
+					<li>
+						Peso:
+					</li>
+				</ul>
+			</td>
+			<td>
+				<ul class="lista">
+					<li>
+						<table id="tablaValores"></table>
+					</li>
+					<li>
+						<table id="tablaPesos"></table>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<input type="button" value="Calcular" id="Mochila" onclick="calcular();">
+	<div id="resultadoMochila"></div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
